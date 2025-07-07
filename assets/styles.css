@@ -31,11 +31,6 @@ body {
     padding-bottom: 20px;
 }
 
-.wrapper-content {
-    /* margin-left: 100px;
-    margin-right: 100px; */
-}
-
 .btn-custom {
     border: 1px white solid;
     border-radius: 100px;
@@ -513,3 +508,5 @@ ul {
     font-size: 12px;
     margin-top: -10px;
 }
+
+/*  */
