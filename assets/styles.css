@@ -532,10 +532,6 @@ ul {
     height: 6px;
 }
 
-.slider-container::-webkit-scrollbar-track {
-    margin-top: -16px;
-}
-
 .slider-container::-webkit-scrollbar-thumb {
     /* background-color: rgba(0, 0, 0, 0.2); */
 
