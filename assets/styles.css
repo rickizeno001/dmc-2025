@@ -22,6 +22,7 @@ body {
   /* width: 100%; */
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .navbar-custom {
@@ -178,10 +179,15 @@ body {
 }
 
 .card-home {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   padding: 20px;
   width: 90%;
+  border: none;
   /* margin-bottom: 270px; */
+}
+
+.img-kv {
+  width: 50%;
 }
 
 .title-page {
@@ -203,8 +209,20 @@ body {
 }
 
 .wrapper-event {
-  /* margin-top: 2px; */
+  /* margin-top: 20px; */
   color: black;
+}
+
+#program {
+  scroll-margin-top: 100px; /* jarak dari atas saat discroll */
+}
+
+#ticket {
+  scroll-margin-top: 40px; /* jarak dari atas saat discroll */
+}
+
+#speaker {
+  scroll-margin-top: 40px; /* jarak dari atas saat discroll */
 }
 
 .wrapper-speaker {
@@ -405,6 +423,10 @@ ul {
     width: 400px;
     margin-bottom: 20px;
   }
+
+  .img-kv {
+    width: 30%;
+  }  
 }
 
 .footer-fixed {
