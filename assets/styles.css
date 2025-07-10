@@ -4,6 +4,11 @@ body {
   overflow-x: hidden;
 }
 
+.row {
+  margin: 0px;
+  padding: 0px;
+}
+
 .img-navbar {
   width: 320px;
 }
@@ -19,10 +24,15 @@ body {
 
 .jumbotron {
   background-image: url("images/home.png");
-  /* width: 100%; */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+}
+
+/* Ganti background untuk tampilan mobile (maksimal 768px) */
+@media (max-width: 768px) {
+  .jumbotron {
+    background-image: url("images/home-mobile.png");
+  }
 }
 
 .navbar-custom {
@@ -84,13 +94,14 @@ body {
 }
 
 .icon-date {
-  width: 24px;
+  width: 30px;
   margin-bottom: 8px;
 }
 
 .icon-location {
-  width: 30px;
+  width: 40px;
   margin-bottom: 8px;
+  margin-left: -4px;
 }
 
 .home-title1 {
@@ -213,17 +224,34 @@ body {
   color: black;
 }
 
+#home {
+  scroll-margin-top: 100px; 
+}
+
 #program {
-  scroll-margin-top: 100px; /* jarak dari atas saat discroll */
+  scroll-margin-top: 100px; 
 }
 
 #ticket {
-  scroll-margin-top: 40px; /* jarak dari atas saat discroll */
+  scroll-margin-top: 40px; 
 }
 
 #speaker {
-  scroll-margin-top: 40px; /* jarak dari atas saat discroll */
+  scroll-margin-top: 40px; 
 }
+
+.btn-showmore {
+  background-color: #ffff;
+  color: #260e3a;
+  font-weight: 600;
+}
+
+.btn-showmore:hover {
+  background-color:rgb(204, 204, 204);
+  color: #260e3a;
+  font-weight: 600;
+}
+
 
 .wrapper-speaker {
   color: white;
@@ -448,13 +476,13 @@ ul {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
-
 .img-card img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
   border: 4px solid white;
   border-radius: 15px;
+  transform: scale(0.9);
 }
 
 .gallery-swiper {
