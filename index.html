@@ -21,6 +21,9 @@
 
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="assets/library/lightbox2/dist/css/lightbox.min.css">
 </head>
 
 <body>
@@ -169,32 +172,32 @@
         </center>
 
         <center>
-          <div class="row text-center" style="width: 80%;">
-            <div class="col-lg-3 col-sm-2">
+          <div class="row text-center counter" style="width: 80%;">
+            <div class="col-lg-3 col-12">
               <div class="wrapper-number-home">
                 <h1 class="number-count" data-count="30" data-plus="true">0</h1>
-                <p class="mb-0">Inspiring Speakers</p>
+                <p class="mb-4">Inspiring Speakers</p>
               </div>
             </div>
 
-            <div class="col-lg-3 col-sm-2">
+            <div class="col-lg-3 col-12">
               <div class="wrapper-number-home">
                 <h1 class="number-count" data-count="1500" data-plus="true">0</h1>
-                <p class="mb-0">Anticipated Attendees</p>
+                <p class="number-count-p">Anticipated Attendees</p>
               </div>
             </div>
 
-            <div class="col-lg-3 col-sm-2">
+            <div class="col-lg-3 col-12">
               <div class="wrapper-number-home">
                 <h1 class="number-count" data-count="15" data-plus="true">0</h1>
-                <p class="mb-0">Curated Sessions</p>
+                <p class="number-count-p">Curated Sessions</p>
               </div>
             </div>
 
-            <div class="col-lg-3 col-sm-2">
+            <div class="col-lg-3 col-12">
               <div class="wrapper-number-home">
                 <h1 class="number-count" data-count="6" data-plus="true">0</h1>
-                <p class="mb-0">Deep-Dive Masterclass</p>
+                <p class="number-count-p">Deep-Dive Masterclass</p>
               </div>
             </div>
           </div>
@@ -732,42 +735,54 @@
 
       <!-- Gallery -->
       <div class="wrapper-gallery" id="gallery">
-        <h1 class="title-page">GALLERY</h1>
+        <h1 class="title-page" style="margin-bottom: 10px;">GALLERY</h1>
+
+        <p style="margin-bottom: 40px">Click the picture to zoom in.</p>
 
         <div class="gallery-swiper container swiper">
           <div class="swiper-wrapper">
             <!-- Card 1 -->
             <div class="swiper-slide card-item">
               <div class="img-card">
-                <img src="assets/images/galleries/BJN00780.jpg" alt="Image">
+                <a href="assets/images/galleries/BJN00780.jpg" data-lightbox="gallery">
+                  <img src="assets/images/galleries/BJN00780.jpg" alt="Image">
+                </a>
               </div>
             </div>
 
             <!-- Card 2 -->
             <div class="swiper-slide card-item">
               <div class="img-card">
-                <img src="assets/images/galleries/JIO_0016.jpg" alt="Image">
+                <a href="assets/images/galleries/JIO_0016.jpg" data-lightbox="gallery">
+                  <img src="assets/images/galleries/JIO_0016.jpg" alt="Image">
+                </a>
               </div>
             </div>
 
             <!-- Card 3 -->
             <div class="swiper-slide card-item">
               <div class="img-card">
-                <img src="assets/images/galleries/JIO_0023.jpg" alt="Image">
+                <a href="assets/images/galleries/JIO_0023.jpg" data-lightbox="gallery">
+                  <img src="assets/images/galleries/JIO_0023.jpg" alt="Image">
+                </a>
               </div>
             </div>
 
             <!-- Card 4 -->
             <div class="swiper-slide card-item">
               <div class="img-card">
-                <img src="assets/images/galleries/BJN01329.jpg" alt="Image">
+                <a href="assets/images/galleries/BJN01329.jpg" data-lightbox="gallery">
+                  <img src="assets/images/galleries/BJN01329.jpg" alt="Image">
+                </a>
               </div>
             </div>
 
             <!-- Card 5 -->
             <div class="swiper-slide card-item">
               <div class="img-card">
-                <img src="assets/images/galleries/JIO_1861.jpg" alt="Image">
+                <a href="assets/images/galleries/JIO_1861.jpg" data-lightbox="gallery">
+                  <img src="assets/images/galleries/JIO_1861.jpg" alt="Image">
+                </a>
               </div>
             </div>
           </div>
@@ -793,6 +808,11 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/script.js"></script>
+
+
+  <!-- Lightbox -->
+  <script src="assets/library/jquery/jquery-3.6.0.min.js"></script>
+  <script src="assets/library/lightbox2/dist/js/lightbox.min.js"></script>
 </body>
 
 </html>

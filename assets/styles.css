@@ -1,7 +1,30 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham/Gotham-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham/Gotham-Medium.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham/Gotham-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham/Gotham-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
 body {
-  font-family: "Rubik", sans-serif;
-  /* background-color: #260E3A; */
   overflow-x: hidden;
+  font-family: 'Gotham', sans-serif;
 }
 
 .row {
@@ -138,11 +161,15 @@ body {
 
 .number-count {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 42px;
+}
+
+.number-count-p {
+  margin-bottom: 30px;
 }
 
 .wrapper-number-home {
-  color: black;
+  color: white;
   margin-top: 40px;
   /* margin-right: 20px;
     margin-left: 20px; */
@@ -268,6 +295,7 @@ body {
 }
 
 .wrapper-gallery {
+  position: relative;
   color: white;
   background-image: url("images/xxxx.png");
   background-repeat: no-repeat;
@@ -275,7 +303,33 @@ body {
   background-position: center;
   padding: 20px;
   height: fit-content;
+  overflow: hidden; /* penting agar overlay tidak bocor keluar */
 }
+
+/* Overlay div */
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* atau warna lain */
+  z-index: 0;
+}
+
+.counter {
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* arah x, y, blur, warna */
+  background: linear-gradient(to left, #260e3a, #6a0572);
+  margin-top: 40px;
+}
+
+/* Semua isi gallery tetap di atas overlay */
+.wrapper-gallery > *:not(.bg-overlay) {
+  position: relative;
+  z-index: 1;
+}
+
 
 .wrapper-agenda {
   display: flex;
