@@ -49,6 +49,7 @@ body {
   background-image: url("images/home.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Ganti background untuk tampilan mobile (maksimal 768px) */
