@@ -570,13 +570,13 @@ ul {
 .card-agenda {
   background: linear-gradient(to right, #260e3a, #6a0572);
   color: white;
-  width: 65%;
+  width: 80%;
   padding: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 14px;
   transition: all 0.4s ease-in-out;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
   margin-top: 20px;
 }
 
