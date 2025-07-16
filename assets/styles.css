@@ -22,6 +22,10 @@
   font-weight: 900;
 }
 
+td, th {
+  vertical-align: top; /* atau 'middle' atau 'bottom' */
+}
+
 body {
   overflow-x: hidden;
   font-family: 'Gotham', sans-serif;
