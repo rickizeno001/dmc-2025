@@ -84,24 +84,50 @@
       <div class="d-flex flex-column justify-content-center align-items-center">
         <!-- <h1 class="home-title1 mt-2">DNA MASTERCLASS 2025</h1> -->
         <img src="./assets/images/logo-dna-masterclass-white2.png" class="img-kv">
-        <h1 class="home-title3 mt-3">BUILD TO ADAPT: <span class="home-title3-span"><br>HUMAN POWERED, AI
-            ENABLED</span></h1>
+
+        <!-- Versi Desktop (md ke atas) -->
+        <h1 class="home-title3 mt-3 d-none d-md-block">
+          BUILD TO ADAPT: <span class="home-title3-span">HUMAN POWERED, AI ENABLED</span>
+        </h1>
+
+        <!-- Versi Mobile (sm ke bawah) -->
+        <h1 class="home-title3 mt-3 d-block d-md-none">
+          BUILD TO ADAPT: <span class="home-title3-span"><br>HUMAN POWERED, AI ENABLED</span>
+        </h1>
+
         <br>
         <br>
-        <div class="row justify-content-center text-left" style="width: 100%;">
-          <div class="col-12 col-md-4 d-flex align-items-center text-white mb-2">
+        <div class="row justify-content-center text-left" style="width: 100%; margin-top: -20px;">
+          <!-- TANGGAL -->
+          <!-- Desktop -->
+          <div class="col-12 col-md-6 d-none d-md-flex align-items-center text-white mb-2">
             <img src="assets/images/icon-date.svg" alt="icon-date" class="icon-date me-3">
-            <p class="mb-0" style="font-size: 17px;">Wednesday-Thursday, <br>20-21 August 2025</p>
+            <p class="mb-0" style="font-size: 22px; font-weight: 300;">Wednesday–Thursday, 20–21 August 2025</p>
           </div>
-          <div class="col-md-2"></div>
-          <div class="col-12 col-md-4 d-flex align-items-center text-white mb-2">
+
+          <!-- Mobile -->
+          <div class="col-12 d-flex d-md-none align-items-center justify-content-center text-white mb-2">
+            <img src="assets/images/icon-date.svg" alt="icon-date" class="icon-date-mobile me-2">
+            <p class="mb-0" style="font-size: 12px; font-weight: 300;">Wednesday–Thursday, 20–21 August 2025</p>
+          </div>
+
+          <!-- LOKASI -->
+          <!-- Desktop -->
+          <div class="col-12 col-md-5 d-none d-md-flex align-items-center text-white mb-2">
             <img src="assets/images/icon-location.svg" alt="icon-location" class="icon-location me-2">
-            <p class="mb-0" style="font-size: 17px;">Grand Ballroom, <br> Grand Hyatt Jakarta</p>
+            <p class="mb-0" style="font-size: 22px; font-weight: 300;">Grand Ballroom, Grand Hyatt Jakarta</p>
+          </div>
+
+          <!-- Mobile -->
+          <div class="col-12 d-flex d-md-none align-items-center justify-content-center text-white mb-2">
+            <img src="assets/images/icon-location.svg" alt="icon-location" class="icon-location-mobile me-2">
+            <p class="mb-0" style="font-size: 12px; font-weight: 300;">Grand Ballroom, Grand Hyatt Jakarta</p>
           </div>
         </div>
 
         <div class="wrapper-btn-home text-center">
-          <a href="#ticket" class="btn btn-custom2 mb-2" style="width: 160px; font-size: 14px; padding: 10px">Get Your
+          <a href="#ticket" class="btn btn-custom2 mb-2 me-2" style="width: 140px; font-size: 14px; padding: 10px">Get
+            Your
             Tickets</a>
           <a href="#home" class="btn btn-custom mb-2" style="width: 140px; font-size: 14px; padding: 10px">Learn
             More</a>
@@ -109,11 +135,18 @@
       </div>
     </div>
 
-    <div class="wrapper-img-collab">
-      <center>
-        <p class="text-white" style="font-size: 18px;">In collaboration with :</p>
+    <!-- Versi Desktop -->
+    <div class="wrapper-img-collab d-none d-md-block">
+      <div class="text-center">
         <img src="assets/images/collaboration-with.png" alt="img-collab" class="img-collab">
-      </center>
+      </div>
+    </div>
+
+    <!-- Versi Mobile -->
+    <div class="wrapper-img-collab d-block d-md-none">
+      <div class="text-center">
+        <img src="assets/images/collaboration-with.png" alt="img-collab" class="img-collab-mobile">
+      </div>
     </div>
     <br>
     <br>
@@ -324,7 +357,6 @@
                   <p class="speaker-name">Dian Asmahani</p>
                   <p class="speaker-job">SML</p>
                 </div>
-
    
                 <div class="col-lg-2 col-sm-6 col-6 mb-3 speaker-card">
                   <div class="card text-center bg-light">
@@ -351,8 +383,8 @@
                     <img src="assets/images/speakers/5.png" alt="img-speaker-2" class="img-speaker">
                   </div>
 
-                  <p class="speaker-name">Juinta Omboh Sembiring</p>
-                  <p class="speaker-job">Brigjen TNI</p>
+                  <p class="speaker-name">Brigjen TNI J.O. Sembiring</p>
+                  <p class="speaker-job">Komandan Satuan Siber TNI</p>
                 </div>
 
                 <!-- Card 6 ccccc -->
