@@ -28,6 +28,7 @@ th {
   /* atau 'middle' atau 'bottom' */
 }
 
+
 body {
   overflow-x: hidden;
   font-family: 'Gotham', sans-serif;
@@ -208,6 +209,7 @@ body {
 
 .title-section {
   font-weight: bold;
+  color: #3f3f3a;
 }
 
 .img-logo {
@@ -217,7 +219,7 @@ body {
 }
 
 .wrapper-img-sinarmas {
-  margin-top: 140px;
+  margin-top: 160px;
 }
 
 .img-sinarmas {
@@ -243,7 +245,7 @@ body {
 }
 
 .img-kv {
-  width: 70%;
+  width: 100%;
 }
 
 .title-page {
@@ -251,10 +253,11 @@ body {
   font-weight: bold;
   margin-top: 60px;
   margin-bottom: 60px;
+  color: #3f3f3a;
 }
 
 .sub-title-page {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: bold;
 }
 
@@ -362,12 +365,24 @@ body {
 }
 
 .wrapper-partner {
+  position: relative;
   color: white;
   background-image: url("images/xxxx.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 20px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.wrapper-partner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* ubah angka 0.4 untuk transparansi */
+  z-index: -1;
 }
 
 .content-ticket {
@@ -534,7 +549,7 @@ ul {
   }
 
   .img-kv {
-    width: 30%;
+    width: 50%;
   }
 }
 
@@ -647,6 +662,7 @@ ul {
 .img-speaker {
   width: 100%;
   height: 150px;
+  border-radius: 14px;
   object-fit: contain;
 }
 
@@ -664,4 +680,17 @@ ul {
 
 .img-collab-mobile {
   width: 200px;
+}
+
+.nav-pills .nav-link.active {
+  background: linear-gradient(to right, #260e3a, #6a0572);
+  color: white;
+  font-weight: 600;
+  /* border-radius: 50px; */
+}
+
+.wrapper-tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
