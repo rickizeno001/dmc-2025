@@ -682,6 +682,11 @@ ul {
   width: 200px;
 }
 
+.nav-pills .nav-link {
+  color: black;
+  background-color: transparent;
+}
+
 .nav-pills .nav-link.active {
   background: linear-gradient(to right, #260e3a, #6a0572);
   color: white;
