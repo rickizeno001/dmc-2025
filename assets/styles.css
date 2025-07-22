@@ -600,6 +600,7 @@ ul {
   text-decoration: line-through;
   text-decoration-color: red;
   margin-top: auto;
+  color: #3f3f3a;
 }
 
 .real-price {
@@ -607,6 +608,7 @@ ul {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
+  color: #3f3f3a;
 }
 
 .card-agenda {
