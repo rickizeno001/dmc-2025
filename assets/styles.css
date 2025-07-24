@@ -162,7 +162,7 @@ body {
 .home-title3 {
   color: white;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -219,12 +219,12 @@ body {
 }
 
 .wrapper-img-sinarmas {
-  margin-top: 160px;
+  margin-top: 120px;
 }
 
 .img-sinarmas {
-  width: 300px;
-  margin-bottom: 20px;
+  width: 180px;
+  /* margin-bottom: 20px; */
 }
 
 .wrapper-img-collab {
@@ -232,8 +232,8 @@ body {
 }
 
 .img-collab {
-  width: 300px;
-  margin-bottom: 20px;
+  width: 200px;
+  margin-bottom: 40px;
 }
 
 .card-home {
@@ -477,7 +477,7 @@ ul {
 
 .card-ticket {
   padding: 30px;
-  min-height: 720px;
+  min-height: 630px;
   max-width: 700px;
   margin-top: 30px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -526,7 +526,7 @@ ul {
   .home-title3 {
     color: white;
     font-weight: 600;
-    font-size: 38px;
+    font-size: 28px;
     text-align: center;
   }
 
@@ -544,12 +544,12 @@ ul {
   }
 
   .img-sinarmas {
-    width: 400px;
+    width: 240px;
     margin-bottom: 20px;
   }
 
   .img-kv {
-    width: 50%;
+    width: 70%;
   }
 }
 
@@ -601,11 +601,12 @@ ul {
   text-decoration-color: red;
   margin-top: auto;
   color: #3f3f3a;
+  font-size: 24px;
 }
 
 .real-price {
   margin-top: auto;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #3f3f3a;
@@ -700,4 +701,11 @@ ul {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.btn-submit {
+  width: 140px;
+  background: linear-gradient(to right, #260e3a, #6a0572);
+  border: solid white 2px;
+  color: white;
 }
