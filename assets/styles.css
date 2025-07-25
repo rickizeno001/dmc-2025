@@ -709,3 +709,10 @@ ul {
   border: solid white 2px;
   color: white;
 }
+
+.btn-submit:hover {
+  width: 140px;
+  background: linear-gradient(to right, #260e3a, #6a0572);
+  border: solid white 2px;
+  color: white;
+}
