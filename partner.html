@@ -2,181 +2,249 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DNA MASTERCLASS 2025</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DNA MASTERCLASS 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- Lightbox -->
-    <link rel="stylesheet" href="assets/library/lightbox2/dist/css/lightbox.min.css">
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="assets/library/lightbox2/dist/css/lightbox.min.css">
+
+  <!-- Sweetalert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
-        <div class="container-fluid wrapper-nav">
-            <!-- Logo di kiri -->
-            <a class="navbar-brand" href="index.html">
-                <!-- Desktop Only -->
-                <img src="assets/images/logo-dna-masterclass-white.png" alt="dna-masterclass"
-                    class="img-navbar d-none d-lg-block">
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+    <div class="container-fluid wrapper-nav">
+      <!-- Logo di kiri -->
+      <a class="navbar-brand" href="index.html">
+        <!-- Desktop Only -->
+        <img src="assets/images/logo-dna-masterclass-white.png" alt="dna-masterclass"
+          class="img-navbar d-none d-lg-block">
 
-                <!-- Mobile -->
-                <img src="assets/images/logo-dna-masterclass-white.png" alt="dna-masterclass-mobile"
-                    class="img-navbar d-block d-lg-none" style="width: 260px;">
-            </a>
+        <!-- Mobile -->
+        <img src="assets/images/logo-dna-masterclass-white.png" alt="dna-masterclass-mobile"
+          class="img-navbar d-block d-lg-none" style="width: 260px;">
+      </a>
 
-            <!-- Toggle untuk tampilan mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <!-- Toggle untuk tampilan mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <!-- Isi navbar -->
-            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+      <!-- Isi navbar -->
+      <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
 
-                <!-- Menu nav -->
-                <ul class="navbar-nav ms-auto mb-2 me-3 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-white active" aria-current="page" href="index.html#home">Program</a>
-                    </li>
+        <!-- Menu nav -->
+        <ul class="navbar-nav ms-auto mb-2 me-3 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page" href="index.html#home">Program</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html#speaker">Speaker</a>
-                    </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html#speaker">Speaker</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="agenda.html">Agenda</a>
-                    </li>
-                </ul>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="agenda.html">Agenda</a>
+          </li>
+        </ul>
 
-                <!-- Tombol di kanan -->
-                <div class="d-flex">
-                    <a class="btn btn-custom me-3" href="partner.html">Partner with us</a>
-                    <a class="btn btn-custom2" href="index.html#ticket">Get Tickets</a>
-                </div>
-            </div>
-    </nav>
-
-
-
-    <section class="section text-center">
-        <!-- Partner with us -->
-        <div class="wrapper-partner" id="partner">
-            <br><br>
-            <h1 class="title-page" style="color: white;">PARTNER WITH US</h1>
-
-            <h3 class="sub-title-page mb-4" style="padding-top: 10px; font-weight: 300 !important;">Drive Innovation.
-                Gain
-                Visibility. Make Impact.
-            </h3>
-
-            <p style="font-weight: 300 !important; font-size: 20px;">
-                Position your brand at the forefront of AI, innovation, and inclusive digital transformation with DNA
-                Masterclass 2025.
-            </p>
-
-            <h3 class="title-page" style="padding-top: 10px; margin-bottom: -1px; color: white;">Why Sponsor Us?</h3>
-
-            <div class="row mt-2">
-                <div class="col-lg-3">
-                    <img src="assets/images/sponsor-1.jpg" alt="img-sponsor" class="img-sponsor">
-
-                    <p style="font-weight: 300 !important; font-size: 20px;">
-                        Showcase your brand to a targeted audience of potential clients and partners
-                    </p>
-                </div>
-
-                <div class="col-lg-3">
-                    <img src="assets/images/sponsor-2.jpg" alt="img-sponsor" class="img-sponsor">
-
-                    <p style="font-weight: 300 !important; font-size: 20px;">
-                        Gain valuable brand exposure through prominent visibility at the event
-                    </p>
-                </div>
-
-                <div class="col-lg-3">
-                    <img src="assets/images/sponsor-3.jpg" alt="img-sponsor" class="img-sponsor">
-
-                    <p style="font-weight: 300 !important; font-size: 20px;">
-                        Network with key decision-makers within the Indonesian SME, academic, and government ecosystem
-                    </p>
-                </div>
-
-                <div class="col-lg-3">
-                    <img src="assets/images/sponsor-4.jpg" alt="img-sponsor" class="img-sponsor">
-
-                    <p style="font-weight: 300 !important; font-size: 20px;">
-                        Position yourself as a thought leader by participating in key sessions
-                    </p>
-                </div>
-            </div>
-
-            <h3 class="title-page" style="padding-top: 10px; margin-bottom: -1px; color: white;">Form</h3>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <form action="" id="form-rsvp-general_custom" class="mt-5" method="post">
-                        <div class="text-start">
-                            <label for="fullname" class="mb-2">Name</label>
-                            <input type="text" name="fullname" id="fullname" class="form-control" />
-                        </div>
-
-                        <div class="text-start">
-                            <label for="additional_data[4869]" class="mb-2 mt-3">Organization</label>
-                            <input type="text" name="additional_data[4869]" id="" class="form-control" />
-                        </div>
-
-                        <div class="text-start">
-                            <label for="telephone" class="mb-2 mt-3">Handphone</label>
-                            <input type="number" name="telephone" id="telephone" class="form-control" />
-                        </div>
-
-                        <div class="text-start">
-                            <label for="email" class="mb-2 mt-3">Email</label>
-                            <input type="email" name="email" id="email" class="form-control" />
-                        </div>
-
-                        <button type="submit" id="submit_rsvp_general_custom" value="submit_rsvp_general_custom"
-                            class="btn mt-4 btn-submit" name="submit_rsvp_general_custom">Submit</button>
-                    </form>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
+        <!-- Tombol di kanan -->
+        <div class="d-flex">
+          <a class="btn btn-custom me-3" href="partner.html">Partner with us</a>
+          <a class="btn btn-custom2" href="index.html#ticket">Get Tickets</a>
         </div>
-    </section>
+      </div>
+  </nav>
 
-    <footer class="footer-fixed">
-        &copy; All Rights Reserved <a href="#">dnamasterclass.com</a>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/script.js"></script>
+  <section class="section text-center">
+    <!-- Partner with us -->
+    <div class="wrapper-partner" id="partner">
+      <br><br>
+      <h1 class="title-page" style="color: white;">PARTNER WITH US</h1>
 
-    <!-- Lightbox -->
-    <script src="assets/library/jquery/jquery-3.6.0.min.js"></script>
-    <script src="assets/library/lightbox2/dist/js/lightbox.min.js"></script>
+      <h3 class="sub-title-page mb-4" style="padding-top: 10px; font-weight: 300 !important;">Drive Innovation.
+        Gain
+        Visibility. Make Impact.
+      </h3>
+
+      <p style="font-weight: 300 !important; font-size: 20px;">
+        Position your brand at the forefront of AI, innovation, and inclusive digital transformation with DNA
+        Masterclass 2025.
+      </p>
+
+      <h3 class="title-page" style="padding-top: 10px; margin-bottom: -1px; color: white;">Why Sponsor Us?</h3>
+
+      <div class="row mt-2">
+        <div class="col-lg-3">
+          <img src="assets/images/sponsor-1.jpg" alt="img-sponsor" class="img-sponsor">
+
+          <p style="font-weight: 300 !important; font-size: 20px;">
+            Showcase your brand to a targeted audience of potential clients and partners
+          </p>
+        </div>
+
+        <div class="col-lg-3">
+          <img src="assets/images/sponsor-2.jpg" alt="img-sponsor" class="img-sponsor">
+
+          <p style="font-weight: 300 !important; font-size: 20px;">
+            Gain valuable brand exposure through prominent visibility at the event
+          </p>
+        </div>
+
+        <div class="col-lg-3">
+          <img src="assets/images/sponsor-3.jpg" alt="img-sponsor" class="img-sponsor">
+
+          <p style="font-weight: 300 !important; font-size: 20px;">
+            Network with key decision-makers within the Indonesian SME, academic, and government ecosystem
+          </p>
+        </div>
+
+        <div class="col-lg-3">
+          <img src="assets/images/sponsor-4.jpg" alt="img-sponsor" class="img-sponsor">
+
+          <p style="font-weight: 300 !important; font-size: 20px;">
+            Position yourself as a thought leader by participating in key sessions
+          </p>
+        </div>
+      </div>
+
+      <h3 class="title-page" style="padding-top: 10px; margin-bottom: -1px; color: white;">FORM</h3>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <form action="https://inv.migunesia.com/dnamasterclass-2025" id="form-rsvp-general_custom" class="mt-5"
+            method="post">
+            <input type="hidden" name="stp" value="rsvp-general">
+            <input type="hidden" name="lang" value="">
+            <input type="hidden" name="event_session" value="">
+            <input type="hidden" name="category_id" value="">
+
+            <div class="text-start">
+              <label for="fullname" class="mb-2">Name <span class="text-danger">*</span></label>
+              <input type="text" name="fullname" id="fullname" class="form-control" required />
+            </div>
+
+            <div class="text-start">
+              <label for="organization" class="mb-2 mt-3">
+                Organization <span class="text-danger">*</span></label>
+              <input type="text" name="additional_data[79]" id="organization" class="form-control" required />
+            </div>
+
+            <div class="text-start">
+              <label for="telephone" class="mb-2 mt-3"> Handphone <span class="text-danger">*</span></label>
+              <input type="number" name="telephone" id="telephone" class="form-control" required />
+            </div>
+
+            <div class="text-start">
+              <label for="email" class="mb-2 mt-3">Email <span class="text-danger">*</span></label>
+              <input type="email" name="email" id="email" class="form-control" required />
+            </div>
+
+            <button type="submit" id="submit_rsvp_general_custom" value="submit_rsvp_general_custom"
+              class="btn mt-4 btn-submit" name="submit_rsvp_general_custom">Submit</button>
+          </form>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-fixed">
+    &copy; All Rights Reserved <a href="#">dnamasterclass.com</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/script.js"></script>
+
+  <!-- Lightbox -->
+  <script src="assets/library/jquery/jquery-3.6.0.min.js"></script>
+  <script src="assets/library/lightbox2/dist/js/lightbox.min.js"></script>
+
+  <script>
+
+    document.getElementById('form-rsvp-general_custom').addEventListener('submit', function (e) {
+      e.preventDefault(); // Stop form dari submit normal
+
+      const form = e.target;
+      const formData = new FormData(form);
+
+      // Tambahkan tombol submit secara manual ke formData
+      formData.append('submit_rsvp_general_custom', 'submit_rsvp_general_custom');
+
+      // Debug - tampilkan isi formData
+      for (let [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
+      }
+
+      // Kirim request ke server
+      fetch('https://inv.migunesia.com/dnamasterclass-2025', {
+        method: 'POST',
+        body: formData
+      })
+        .then(response => {
+          url_success = "https://inv.migunesia.com/dnamasterclass-2025?stp=rsvp";
+
+          if (response.ok && response.url == url_success) {
+            Swal.fire({
+              title: 'SUCCESS!',
+              text: 'Submit success!',
+              icon: 'success',
+              confirmButtonText: 'OK'
+            }).then(() => {
+              window.location.href = window.location.pathname;
+            });
+          } else {
+            Swal.fire({
+              title: 'ERROR!',
+              text: 'Submit error, email or phone number are already registered!',
+              icon: 'error',
+              confirmButtonText: 'OK'
+            }).then(() => {
+              window.location.href = window.location.pathname;
+            });
+          }
+        })
+        .catch(error => {
+          Swal.fire({
+            title: 'ERROR!',
+            text: 'Something went wrong, try again!',
+            icon: 'error',
+            confirmButtonText: 'OK'
+          }).then(() => {
+            window.location.href = window.location.pathname;
+          });
+        });
+    });
+  </script>
+
 </body>
 
 </html>
