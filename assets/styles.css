@@ -477,7 +477,7 @@ ul {
 
 .card-ticket {
   padding: 30px;
-  min-height: 630px;
+  min-height: 810px;
   max-width: 700px;
   margin-top: 30px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -500,7 +500,7 @@ ul {
 }
 
 .content-ticket p {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .responsive-table {
@@ -715,4 +715,44 @@ ul {
   background: linear-gradient(to right, #260e3a, #6a0572);
   border: solid white 2px;
   color: white;
+}
+
+.desc-title {
+  font-size : 13px !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  text-align: left !important;
+  padding-bottom: 10px;
+}
+
+.desc-text {
+  font-size : 12px !important;
+  font-weight: 300 !important;
+  margin: 0 !important;
+  text-align: left !important;
+  padding-bottom: 20px;
+}
+
+.wrapper-desc-ticket {
+  background: #f8f8f8ff;
+  border-radius: 10px;
+  padding-top: 8px;
+  padding-bottom: 0px;
+
+  padding-left : 20px;
+  padding-right : 20px;
+  height: 180px;
+}
+
+/* ======================================= */
+
+.wrapper-desc-ticket-ver2 {
+  background: linear-gradient(to left, #260e3a, #3e0642ff);
+  border-radius: 10px;
+  padding-top: 8px;
+  padding-bottom: 0px;
+
+  padding-left : 20px;
+  padding-right : 20px;
+  height: 180px;
 }
